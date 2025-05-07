@@ -27,7 +27,7 @@ class Database:
         600 seconds.
         """
         self.mongo_client = AsyncIOMotorClient(MONGO_URI)
-        _db = self.mongo_client["MusicBot"]
+        _db = self.mongo_client["Yukki"]
         self.chat_db = _db["chats"]
         self.users_db = _db["users"]
         self.bot_db = _db["bot"]
